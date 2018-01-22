@@ -50,7 +50,7 @@ public class Fecha{
     
     /**
      * El metodo Me imprime los datos del objeto fecha en cuestion
-     * Comparando las fechas del arraylist
+     * 
      */
     public static void toString(Fecha f){
         System.out.println(f.getDia() + " / " + f.getMes() + " / " + f.getAnio());        
