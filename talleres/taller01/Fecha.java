@@ -49,7 +49,7 @@ public class Fecha{
    
     
     /**
-     * El metodo escribe en consola las fechas en orden de mas antigua a mas reciente 
+     * El metodo Me imprime los datos del objeto fecha en cuestion
      * Comparando las fechas del arraylist
      */
     public static void toString(Fecha f){
@@ -141,6 +141,7 @@ public class Fecha{
     /**
      *
      * @param args
+     * Metodo main para ejecutar pruebas al programa
      */
     public static void main(String[] args) {
         Fecha date1 = new Fecha(10,8,2014);
