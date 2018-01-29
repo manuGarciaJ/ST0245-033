@@ -7,7 +7,7 @@ package talleres;
 
 /**
  *
- * @author Isaias Labrador Sanchez
+ * @author Isaias Labrador Sanchez & Manuel García Jimenez
  */
 public class puntoSuma{
     
