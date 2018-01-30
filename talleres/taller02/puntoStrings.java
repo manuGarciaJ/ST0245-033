@@ -1,6 +1,6 @@
 public class puntoStrings
 {
-  // arguments are passed using the text field below this editor
+  // Este es el punto 3
   public static void main(String[] args)
   {
     subConjuntos("","abc");
