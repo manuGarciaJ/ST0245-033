@@ -8,7 +8,7 @@ public class Tres {
 
     
       public static void main(String[] args) {
-        String[] elementos = "a,b,c".split(",");
+       
         int n = 3;                  //Cuantos quiero escoger
         int r = elementos.length;   //Elementos elegidos
         String abc="abc";
