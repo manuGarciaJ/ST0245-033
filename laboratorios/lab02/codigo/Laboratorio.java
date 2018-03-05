@@ -22,18 +22,18 @@ public class Laboratorio {
     
     public static void tiempos(int max){
         Random generator = new Random();
-        //for(int i = 1000000;i<2000000; i=i+100000){
+        for(int i = 1000000;i<2000000; i=i+100000){
             
             int x = generator.nextInt(max);            
-            int size = 22000;
-            int [] a = generator1(size,max);
+            
+            int [] a = generator1(i,max);
             
             long startTime = System.nanoTime();
                 Laboratorio_2.mergeSort(a);
             long endTime = System.nanoTime()- startTime;
                 
             System.out.println("100 m " + endTime);
-        //}
+        }
     }
     
      public static int [] generator1(int size, int max){
