@@ -1,1 +1,2 @@
-Archivo adicional para permitir la creación de carpetas
+Laboratorio.java contiene las clases y los metodos del laboratorio 1
+mientras que laboratorio2.java esta con los metodos merge e insertion sort
