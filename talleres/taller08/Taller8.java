@@ -4,7 +4,7 @@ import java.util.LinkedList;
 public class Taller8 {
 
     /**
-     * @param args the command line arguments
+     * AQUI PUNTOS 1 Y 2 
      */
     public static void main(String[] args) {
         // TODO code application logic here
