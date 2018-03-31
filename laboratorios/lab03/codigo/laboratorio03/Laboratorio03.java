@@ -13,49 +13,99 @@ import java.util.LinkedList;
  */
 public class Laboratorio03 {
 
+    public int unoConArrayList(ArrayList<Integer> a){
+      int mult=1;
+        for(int i=0; i<a.size(); i++){
+         mult= mult*a.get(i);
+        }
+        return mult;
+    }
     
-    public static void ejercicio4(LinkedList solicitudes, LinkedList almacenes){
-        if(!solicitudes.isEmpty() || !almacenes.isEmpty()){
-            LinkedList retornar = new LinkedList();            
-            for(int i = solicitudes.size()-1; i>=1; i=i-2){
-                
-                int aux = (int) solicitudes.get(i-1);
-                    if(almacenes.isEmpty()){
-                        // Si ya no hay "neveras" a todos los almacenes que siguen les crea una lista con su nombre dicendo que estan en lista de espera
-                        LinkedList aux3 = new LinkedList();
-                        aux3.add(solicitudes.get(i));
-                        aux3.add("En lista de espera");
-                        //añade la lista del almacen diciendo que todavia esta en lista de espera
-                        retornar.add(aux3);
-                    }
-                    else{
-                        
-                        // si todavia hay "neveras" el programa añade a la tienda que se esta atendiendo el
-                        // el numero de neveras que requiere, segun la disponibilidad
-                        int cont = 0;
-                        //crea un linked list para añadir la tienda y sus neveras
-                        LinkedList aux2 = new LinkedList();
-                        //añade el nombre del solicitador
-                        aux2.add(solicitudes.get(i));
-
-                        for(int j = almacenes.size()-1; j>=0; j--){
-                            // si el contador es diferente de el numero de neveras que pidio...
-                            if(cont != aux){
-                            //añade la nevera, su codigo(Posicion), y la quita de la lista
-                            aux2.add(almacenes.get(j));
-                            aux2.add(j);
-                            almacenes.remove(j);
-                            cont++;
-                            }
-                            }
-                        //le añade a el linked list respuesta la lista con el almacen atendido y sus neveras
-                        retornar.add(aux2);
-                    }
-            }
-            //imprime La respuesta
-            for(Object elem: retornar){
-                  System.out.println(elem);
-            }
+    public int unoConLinkedList(LinkedList<Integer> a){
+      int mult=1;
+        for(int i=0; i<a.size(); i++){
+         mult= mult*a.get(i);
+        }
+        return mult;
+    }
+    
+    public void SmartInsertArrayList(ArrayList<Integer>a, int data){
+   
+     for(int i=0; i<a.size(); i++){
+      if(data==a.get(i)){
+       return;
+      }
+     }
+      a.add(data);
+    }
+    
+    public void SmartInsertLinkedList(LinkedList<Integer>a, int data){
+     //if(){}else{}
+     for(int i=0; i<a.size(); i++){
+      if(data==a.get(i)){
+       return;
+      }
+     }
+      a.add(data);
+    }
+    
+        public int tresConArrayList(ArrayList<Integer>a){
+        int tot=0;
+        for(int i=0; i<a.size(); i++){
+         tot+= a.get(i);
+        }
+        int target=tot/2;
+        int dif;
+        int sum=0;
+        for(int j=0; j<a.size(); j++){
+        sum+=a.get(j);
+        dif= target-sum;
+        if(dif<=a.get(j+1)){
+        return j+1;
+        }
+        }
+        return 0;
+    }
+    
+    public int tresConLinkedList(LinkedList<Integer>a){
+        int tot=0;
+        for(int i=0; i<a.size(); i++){
+         tot+= a.get(i);
+        }
+        int target=tot/2;
+        int dif;
+        int sum=0;
+        for(int j=0; j<a.size(); j++){
+        sum+=a.get(j);
+        dif= target-sum;
+        if(dif<=a.get(j+1)){
+        return j+1;
+        }
+        }
+        return 0;
+    }
+    
+    //La lista de neveras es una lista que enmuera las neveras en el orden en que fueron metidas a la bodega
+    //La lista de solicitudes es una lista de las ordenes puestas por las tiendas en orden cronologico, su valor nos indica cuantas neveras pidió la respectiva tienda    
+    public static void ejercicio4(LinkedList<Integer>neveras, LinkedList<Integer>solicitudes){
+        int clientes= 0;
+        int n= neveras.size();
+        while(clientes<solicitudes.size()){
+            int numc= clientes+1;
+          System.out.println("El cliente "+numc+" se llevará las neveras:");
+          int nn=0;
+          for(int i=0; i<solicitudes.get(clientes); i++){
+             nn= n-i;  //numero de la nevera que se va a llevar el cliente 
+           System.out.print(nn+", ");
+          }
+          System.out.println();
+          n=nn-1;
+          if(solicitudes.get(clientes+1)!=null&& n<solicitudes.get(clientes+1)){
+             numc++; 
+           System.out.println("El numero de neveras  que quedan no cumple con la demanda del cliente "+numc);
+           break;
+          }
+          clientes++;  
         }
     }
     
@@ -64,21 +114,41 @@ public class Laboratorio03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         Laboratorio03 miLab= new Laboratorio03();
+//__________________________________________PUNTO 1.1________________________________________//
+       
+        ArrayList uno= new ArrayList<Integer>();
+        uno.add(1);
+        uno.add(2);
+        uno.add(3);
+        uno.add(4);
+        LinkedList uno2= new LinkedList<Integer>();
+        uno2.add(1);
+        uno2.add(2);
+        uno2.add(3);
+        uno2.add(4);
+       System.out.println(miLab.unoConArrayList(uno));
+       System.out.println(miLab.unoConLinkedList(uno2));
+        
+//__________________________________________PUNTO 1.2________________________________________//
+        miLab.SmartInsertArrayList(uno, 4);
+        System.out.println();
+        for(int x=0; x<uno.size(); x++){
+        System.out.print(uno.get(x));
+        }
+        System.out.println();
+        miLab.SmartInsertLinkedList(uno2, 5);
+        for(int y=0; y<uno2.size(); y++){
+       System.out.print(uno2.get(y));
+        }
+        System.out.println();
+//__________________________________________PUNTO 1.3________________________________________//
+        System.out.println(miLab.tresConArrayList(uno));
+        System.out.println(miLab.tresConLinkedList(uno2));
 //__________________________________________PUNTO 1.4________________________________________//
-        LinkedList almacen = new LinkedList();
-            almacen.add(0,"haceb");
-            almacen.add(1, "LG");
-            almacen.add(2, "LG X2000");
-            //ultima NEVERA
-            almacen.add(3, "samsung");
-        LinkedList solicitudes = new LinkedList();
-            solicitudes.add(1);
-            solicitudes.add("eafit");
-            solicitudes.add(1);
-            solicitudes.add("la14");
-            solicitudes.add(3);
-            solicitudes.add("Google");
-        ejercicio4(solicitudes, almacen);
+        LinkedList<Integer> fridges= new LinkedList(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15));
+        LinkedList<Integer> orders= new LinkedList(Arrays.asList(6,3,5,3));
+        ejercicio4(fridges, orders);
         
         
 //_____________________________________PUNTO 1.5____________________________________________//
