@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class zzz here.
+ * Aquí está la solución al punto 2.2
  *
  * @author (Manuel García & Isaias Labrador)
  * @version (abril 1, 2018)
