@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=IsBicolorable
+comment0.text=\r\nEsta\ clase\ se\ usa\ para\ determinar\ si\ uno\ o\ varios\ grafos\ son\ bicolorables\r\n\r\n\ @author\ Manuel\ Garcia\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=void\ DescribirGrafos()
+comment2.params=g
+comment2.target=boolean\ IsBicolorable(DigraphAM)
+comment3.params=
+comment3.target=void\ main()
+numComments=4
