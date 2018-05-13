@@ -12,6 +12,18 @@ import static proyecto_datos.QuadTree.d;
  *
  * @author ELO
  */
+
+
+//  La mayoria del codigo de la clase de Cuadrado
+//  Fue obtenida a traves de internet (Youtube), pero fue modificada por
+//  Isaias Labrador Sanchez && Manuel Eduardo Garcia Jimenez 
+//  Para alcanzar el proposito del programa.
+//
+//  Title: Coding Challenge #98.1: Quadtree
+//  Author: The Coding Train (Youtube Channel)
+//  Date: 2018
+//  Code version: Unknown
+//  Availability: https://www.youtube.com/watch?v=OJxEcs0w_kE && https://www.youtube.com/watch?v=QQx_NmCIuCY&t=172s
 public class Cuadrado {
     
     int x;
@@ -19,13 +31,6 @@ public class Cuadrado {
     int ancho;  //weigth    W
     int largo;  //height    H
     
-    /**
-     *
-     * @param x
-     * @param y
-     * @param ancho
-     * @param largo
-     */
     public Cuadrado(int x, int y, int ancho, int largo){
         this.x = x;
         this.y = y;

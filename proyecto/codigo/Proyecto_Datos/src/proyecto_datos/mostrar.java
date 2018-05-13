@@ -37,8 +37,8 @@ public class mostrar extends JFrame{
     
     public void paint(Graphics g){
         for(int hey=0; hey<x.size();hey++){
-//           if(ancho.get(hey)== 8){continue;}
-//            g.setColor(Color.BLUE);
+//            if(ancho.get(hey)== 8){continue;}
+//            g.setColor(Color.WHITE);
 //            g.drawRect(x.get(hey)+10, y.get(hey), ancho.get(hey), largo.get(hey));            
         }
         for(int hey=0; hey<xab.size();hey++){
@@ -56,47 +56,20 @@ public class mostrar extends JFrame{
         }
         
     }
-
-    /**
-     *
-     * @param x
-     * @param y
-     * @param ancho
-     * @param largo
-     */
     public void access(ArrayList<Integer> x, ArrayList<Integer> y, ArrayList<Integer> ancho, ArrayList<Integer> largo){
         this.x = x;
         this.y = y;
         this.ancho = ancho;
         this.largo = largo;
     }
-
-    /**
-     *
-     * @param abx
-     * @param aby
-     */
     public void accessab(ArrayList<Integer> abx, ArrayList<Integer> aby){
         this.xab = abx;
         this.yab = aby;
     }
-
-    /**
-     *
-     * @param abx
-     * @param aby
-     */
     public void accessab1(ArrayList<Integer> abx, ArrayList<Integer> aby){
         this.xabin = abx;
         this.yabin = aby;
     }
-
-    /**
-     *
-     * @param x
-     * @param y
-     * @param radio
-     */
     public void accessc(ArrayList<Integer> x, ArrayList<Integer> y,ArrayList<Integer> radio){
         this.circlex = x;
         this.circley = y;
@@ -104,9 +77,6 @@ public class mostrar extends JFrame{
         
     }
     
-    /**
-     *
-     */
     public mostrar(){        
         setBackground(Color.BLACK);
         setSize(new Dimension(1000,700));

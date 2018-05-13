@@ -8,11 +8,25 @@ package proyecto_datos;
 import java.util.ArrayList;
 import java.util.EnumSet;
 
+//  La mayoria del codigo de la clase de QuadTree
+//  Fue obtenida a traves de internet (Youtube - Wikipedia), pero fue modificada por
+//  Isaias Labrador Sanchez && Manuel Eduardo Garcia Jimenez 
+//  Para alcanzar el proposito del programa.
+//
+//  Title: Coding Challenge #98.1: Quadtree
+//  Author: The Coding Train (Youtube Channel)
+//  Date: 2018
+//  Code version: Unknown
+//  Availability: https://www.youtube.com/watch?v=OJxEcs0w_kE && https://www.youtube.com/watch?v=QQx_NmCIuCY&t=172s
+//  
+//  &&
+//
+//  Title: Quadtree
+//  Author: Wikipedia
+//  Date: 2017
+//  Code version: PseudoCode
+//  Availability: https://es.wikipedia.org/wiki/Quadtree 
 
-/**
- *
- * @author ELO
- */
 public class QuadTree {
     
     int inicial = 0;

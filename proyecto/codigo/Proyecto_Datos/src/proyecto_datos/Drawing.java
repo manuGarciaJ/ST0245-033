@@ -31,13 +31,7 @@ public class Drawing{
     static ArrayList<Integer> circley = new ArrayList<>();
     static ArrayList<Integer> circler = new ArrayList<>();
     
-    /**
-     *
-     * @param x
-     * @param y
-     * @param ancho
-     * @param largo
-     */
+    
     public void save(int x, int y, int ancho, int largo){
         if(this.x.contains(x) && this.y.contains(y) && this.ancho.contains(ancho) && this.largo.contains(largo)){return;}     
         this.x.add(x);
@@ -45,10 +39,6 @@ public class Drawing{
         this.ancho.add(ancho);
         this.largo.add(largo);      
     }
-
-    /**
-     *
-     */
     public void enviar(){
         mostrar m = new mostrar();
         m.access(x, y, ancho, largo);
@@ -57,12 +47,6 @@ public class Drawing{
         m.accessc(circlex, circley, circler);
     }
     //guarda los datos de la abeja
-
-    /**
-     *
-     * @param x
-     * @param y
-     */
     public void saveab(int x, int y){
         if(yab.contains(y)&& xab.contains(x)){return;}
         else{
@@ -70,12 +54,6 @@ public class Drawing{
         this.xab.add(x);
         }
     }
-
-    /**
-     *
-     * @param x
-     * @param y
-     */
     public void saveab1(int x, int y){
         if(yabin.contains(y)&& xabin.contains(x)){return;}
         else{
@@ -83,13 +61,6 @@ public class Drawing{
             this.xabin.add(x);
         }
     }
-
-    /**
-     *
-     * @param x
-     * @param y
-     * @param radio
-     */
     public void savecir(int x, int y, int radio){
         if(this.circlex.contains(x) && this.circley.contains(y) && this.circler.contains(radio)){return;}
         

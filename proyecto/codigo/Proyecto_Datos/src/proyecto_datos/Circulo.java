@@ -10,11 +10,18 @@ package proyecto_datos;
  * @author Labrador
  */
 import static proyecto_datos.QuadTree.d;
+//
+//  La mayoria del codigo de la clase de Circulo
+//  Fue obtenida a traves de internet (Youtube), pero fue modificada por
+//  Isaias Labrador Sanchez && Manuel Eduardo Garcia Jimenez 
+//  Para alcanzar el proposito del programa.
+//
+//  Title: Coding Challenge #98.1: Quadtree
+//  Author: The Coding Train (Youtube Channel)
+//  Date: 2018
+//  Code version: Unknown
+//  Availability: https://www.youtube.com/watch?v=OJxEcs0w_kE && https://www.youtube.com/watch?v=QQx_NmCIuCY&t=172s
 
-/**
- *
- * @author user
- */
 public class Circulo {
     int x;
     int y;

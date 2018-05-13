@@ -12,18 +12,22 @@ import static proyecto_datos.QuadTree.d;
 public class Abeja {
     int latitud;    // eje x
     int longitud;   // eje y
+    double auxLatitud;
+    double auxLongitud;
     Circulo comparar;
     
     /**
-     * @author Isaias Labrador Sánchez 
+     * @author Isaias Labrador Sánchez && ...
      * @param latitud
      * @param longitud
      * @param comparar 
      */
-    public Abeja(int latitud, int longitud, Circulo comparar){
+    public Abeja(int latitud, int longitud, Circulo comparar, double auxLatitud, double auxLongitud){
         this.latitud = latitud;
         this.longitud = longitud;
         this.comparar = comparar;
+        this.auxLatitud = auxLatitud;
+        this.auxLongitud = auxLongitud;
         d.saveab(latitud, longitud);
         
     }
