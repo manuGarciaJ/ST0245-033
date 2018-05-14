@@ -13,7 +13,7 @@ public class Convert {
     
     /**
      * 
-     * @param entero
+     * @param entero - Double de la coordenada geografica longitud
      * @return el valor convertido para Y en un grafico 
      * Basicamente solo se usa para graficar las cosas que el programa va haciendo
      * en una ventana Graphic2D
@@ -26,7 +26,7 @@ public class Convert {
     }
     /**
      * 
-     * @param entero
+     * @param entero - Double de la coordenada geografica latitud
      * @return el valor convertido para X en un grafico 
      * Basicamente solo se usa para graficar las cosas que el programa va haciendo
      * en una ventana Graphic2D

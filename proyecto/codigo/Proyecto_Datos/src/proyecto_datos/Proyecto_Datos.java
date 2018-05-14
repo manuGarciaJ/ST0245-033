@@ -11,13 +11,13 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Isaias Labrador Sanchez && Manuel Eduardo Garcia Jimenez
+ * @author Isaias Labrador Sanchez Manuel Eduardo Garcia Jimenez
  */
 public class Proyecto_Datos {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws InterruptedException { 
+    public static void main(String[] args){ 
         long totalSum = 0;
         long startTime = System.currentTimeMillis();
         

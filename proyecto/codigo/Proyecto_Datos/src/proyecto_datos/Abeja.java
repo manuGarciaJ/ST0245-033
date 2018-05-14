@@ -17,10 +17,12 @@ public class Abeja {
     Circulo comparar;
     
     /**
-     * @author Isaias Labrador Sánchez && ...
-     * @param latitud
-     * @param longitud
-     * @param comparar 
+     * @author Isaias Labrador Sánchez Manuel Eduardo Garcia
+     * @param latitud - posicion en x de la abeja
+     * @param longitud - posicion en y de la abeja
+     * @param comparar - Radio de colision de la abeja
+     * @param auxLatitud - La latitud en coordenadas geograficas
+     * @param auxLongitud - La longitud en coordenadas geograficas
      */
     public Abeja(int latitud, int longitud, Circulo comparar, double auxLatitud, double auxLongitud){
         this.latitud = latitud;
@@ -33,7 +35,7 @@ public class Abeja {
     }
     /**
      * 
-     * @param otra
+     * @param otra Abeja con la que se pregunta si intersecta
      * @return Si la abeja sobre la que se aplica el metodo se intersecta con la abeja
      * que se pasa como parametro
      */

@@ -46,7 +46,7 @@ public class QuadTree {
     static Drawing d = new Drawing();
     /**
      * Constructor de cada QuadTree
-     * @param limite 
+     * @param limite - Dominio del quadtree en cuestion
      */
     public QuadTree(Cuadrado limite){
         this.limite = limite;
@@ -104,7 +104,7 @@ public class QuadTree {
     }
     /**
      * Funcion publica auxiliar de InsertBee
-     * @param a 
+     * @param a - abeja que se inserta en el quadtree
      */
     public void insert(Abeja a){
         insertBee(a);
@@ -140,9 +140,9 @@ public class QuadTree {
     /**
      * Funcion que a traves de un rango o limite dado, me devuelve las abejas
      * que esten dentro del mismo
-     * @param lim
-     * @param ab_encontradas
-     * @return 
+     * @param lim - radio para decir si encuentra abejas dentro
+     * @param ab_encontradas - ArrayList Vacio que se devuelve con las abejas que se encuentran dentro del radio
+     * @return ArraList con las abejas que se encuentran en el radio
      */
     public ArrayList query(Circulo lim, ArrayList ab_encontradas){
         if(!this.limite.intersecta(lim)){

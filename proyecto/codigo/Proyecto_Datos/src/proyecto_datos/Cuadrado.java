@@ -41,7 +41,7 @@ public class Cuadrado {
     
     /**
      * 
-     * @param abeja
+     * @param abeja - abeja que se pregunta si está en el dominion del cuadrado
      * @return si dentro del cuadrado en cuestion se encuentra la abeja que se pasa como parametro
      */
     public boolean contains(Abeja abeja){
@@ -52,7 +52,7 @@ public class Cuadrado {
     }
     /**
      * 
-     * @param lim
+     * @param lim - Cuadrado con el que se pregunta si se intersecta
      * @return Si el cuadrado en cuestion se intersecta con el cuadrado de parametro 
      */
     public boolean intersecta(Cuadrado lim){
@@ -63,7 +63,7 @@ public class Cuadrado {
     }
     /**
      * 
-     * @param lim
+     * @param lim - Circulo en cuestion que se pregunta si se intersecta
      * @return Si el cuadrado en cuestion se intersecta con el Circulo de parametro 
      */
     public boolean intersecta(Circulo lim){

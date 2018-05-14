@@ -28,9 +28,9 @@ public class Circulo {
     double radio;
     /**
      * Constructor Circulo, sirve de referencia para el rango de +- 100 metro
-     * @param x
-     * @param y
-     * @param r 
+     * @param x - x del centro del circulo que se crea
+     * @param y - y del centro del circulo que se crea
+     * @param r - radio del circulo que se crea
      */
     public Circulo(int x, int y, int r){
         this.x = x;
@@ -42,7 +42,7 @@ public class Circulo {
 
     /**
      * 
-     * @param lim
+     * @param lim - Cuadrado con el que se compara si intersecta
      * @return Si el circulo con al que se le aplica se intersecta con el que se pasa como parametro 
      */
     public boolean intersecta(Cuadrado lim){
@@ -73,7 +73,7 @@ public class Circulo {
     }
     /**
      * 
-     * @param abeja
+     * @param abeja - Abeja sobre la que se pregunta si el circulo la "contiene"
      * @return si el circulo con su X y Y espeficidado contiene la abeja que se pasa como parametro
      */
     public boolean contains(Abeja abeja){
