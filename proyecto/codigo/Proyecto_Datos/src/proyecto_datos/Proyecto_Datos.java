@@ -24,9 +24,9 @@ public class Proyecto_Datos {
         Cuadrado C = new Cuadrado(500,350,500,350);
         QuadTree quad = new QuadTree(C);        
         
-        Drawing d = new Drawing();
         
-        ArrayList<Abeja> abejas =leer(".\\src\\proyecto_datos\\ConjuntoDeDatosCon1000abejas.txt");
+        
+        ArrayList<Abeja> abejas =leer(".\\src\\proyecto_datos\\ConjuntoDeDatosCon10000abejas.txt");
         
         //arraylist vacio para mandar a la funcion query
         ArrayList<Abeja> auxiliar = new ArrayList<>();        
@@ -45,14 +45,16 @@ public class Proyecto_Datos {
             for(int j = 0; j <otra.size();j++){
                 Abeja aux2 = otra.get(j);
                 if(auxiliarAb != aux2 && auxiliarAb.intersecta(aux2)){
-                    System.out.println("la abeja en la posicion: " + aux2.auxLatitud + " , " + aux2.auxLongitud 
-                            + ". Se va a chocar con la abeja en la posicion: " 
-                            + auxiliarAb.auxLatitud + " , " + auxiliarAb.auxLongitud);
+//                    System.out.println("la abeja en la posicion: " + aux2.auxLatitud + " , " + aux2.auxLongitud 
+//                            + ". Se va a chocar con la abeja en la posicion: " 
+//                            + auxiliarAb.auxLatitud + " , " + auxiliarAb.auxLongitud);
                 }
             }           
-        }        
-        d.enviar();
+        } 
         totalSum+= (System.currentTimeMillis()-startTime);
+        Drawing d = new Drawing();
+        d.enviar();
+        
         System.out.println(totalSum);
         
     }

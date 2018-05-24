@@ -36,7 +36,7 @@ public class Cuadrado {
         this.y = y;
         this.ancho = ancho;
         this.largo = largo;
-////        d.save(x-ancho,y-largo,ancho*2,largo*2);        
+        d.save(x-ancho,y-largo,ancho*2,largo*2);        
     }
     
     /**

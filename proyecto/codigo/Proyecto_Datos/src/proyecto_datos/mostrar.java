@@ -36,11 +36,11 @@ public class mostrar extends JFrame{
     static ArrayList<Integer> circler = new ArrayList<>();
     
     public void paint(Graphics g){
-        for(int hey=0; hey<x.size();hey++){
+//        for(int hey=0; hey<x.size();hey++){
 //            if(ancho.get(hey)== 8){continue;}
-//            g.setColor(Color.WHITE);
-//            g.drawRect(x.get(hey)+10, y.get(hey), ancho.get(hey), largo.get(hey));            
-        }
+////            g.setColor(Color.WHITE);
+////            g.drawRect(x.get(hey)+10, y.get(hey), ancho.get(hey), largo.get(hey));            
+//        }
         for(int hey=0; hey<xab.size();hey++){
             g.setColor(Color.RED);
             g.drawRect(xab.get(hey)+10, yab.get(hey), 2, 2);

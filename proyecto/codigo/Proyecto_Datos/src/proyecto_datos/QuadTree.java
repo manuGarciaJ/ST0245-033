@@ -50,7 +50,7 @@ public class QuadTree {
      */
     public QuadTree(Cuadrado limite){
         this.limite = limite;
-        this.capacidad = 4;
+        this.capacidad = 300;
         abejas = new ArrayList<>();
         this.dividido = false;
     }

@@ -33,7 +33,7 @@ public class Drawing{
     
     
     public void save(int x, int y, int ancho, int largo){
-        if(this.x.contains(x) && this.y.contains(y) && this.ancho.contains(ancho) && this.largo.contains(largo)){return;}     
+//        if(this.x.contains(x) && this.y.contains(y) && this.ancho.contains(ancho) && this.largo.contains(largo)){return;}     
         this.x.add(x);
         this.y.add(y);
         this.ancho.add(ancho);
@@ -48,11 +48,11 @@ public class Drawing{
     }
     //guarda los datos de la abeja
     public void saveab(int x, int y){
-        if(yab.contains(y)&& xab.contains(x)){return;}
-        else{
+//        if(yab.contains(y)&& xab.contains(x)){return;}
+//        else{
         this.yab.add(y);
         this.xab.add(x);
-        }
+//        }
     }
     public void saveab1(int x, int y){
         if(yabin.contains(y)&& xabin.contains(x)){return;}
@@ -62,7 +62,7 @@ public class Drawing{
         }
     }
     public void savecir(int x, int y, int radio){
-        if(this.circlex.contains(x) && this.circley.contains(y) && this.circler.contains(radio)){return;}
+//        if(this.circlex.contains(x) && this.circley.contains(y) && this.circler.contains(radio)){return;}
         
         x = x - radio/2;
         y = y - radio/2;
